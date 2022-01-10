@@ -31,13 +31,13 @@ namespace Template
                 sessionManager.SessionStateChanged += SessionChanged;
             }
 
-             SetupConfig();
+            SetupConfig();
 
         }
         private void SetupConfig()
         {
             FileUtils utils = new FileUtils();
-         
+
             if (File.Exists(StoragePath + "\\TemplateConfig.xml"))
             {
                 config = utils.ReadFromXmlFile<Config>(StoragePath + "\\TemplateConfig.xml");
@@ -45,7 +45,7 @@ namespace Template
             }
             else
             {
-               config = new Config();
+                config = new Config();
                 utils.WriteToXmlFile<Config>(StoragePath + "\\TemplateConfig.xml", config, false);
             }
 
@@ -55,8 +55,8 @@ namespace Template
 
         }
         public static Config config;
-     
 
-        }
+
     }
 }
+
