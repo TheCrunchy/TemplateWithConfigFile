@@ -8,7 +8,7 @@ namespace Template
 {
     public class Config
     {
-        public int SecondsBetweenGravChecks = 300;
+        public int Example = 300;
 
     }
 }
